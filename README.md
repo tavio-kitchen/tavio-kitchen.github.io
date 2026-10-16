@@ -26,7 +26,7 @@ The repository is intended for `tavio-kitchen/tavio-kitchen.github.io`. GitHub P
 
 The custom domain is `taviokitchen.com`. Its GitHub Pages custom-domain setting and GoDaddy DNS must both be configured before the custom domain serves the site. Set the four apex `A` records to `185.199.108.153`, `185.199.109.153`, `185.199.110.153` and `185.199.111.153`. Point the `www` CNAME to `tavio-kitchen.github.io`. Keep existing email records. See [GitHub's domain setup guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
 
-After DNS changes, run the **Enable custom-domain HTTPS** workflow. It checks GitHub's domain and certificate state once per minute, refreshes certificate provisioning once after GitHub validates both DNS names, and enables HTTPS when the certificate is approved. It verifies enforcement and stops. The workflow is manually triggered, runs for at most 70 minutes, and uses the built-in GitHub token; no recurring schedule or stored credentials are needed.
+The helper `scripts/enable-https.mjs` completes HTTPS provisioning from an authenticated administrative session. It checks GitHub's domain and certificate state once per minute, refreshes provisioning once after GitHub validates both DNS names, enables HTTPS when the certificate is approved, and verifies the setting. It stops after success or 65 checks. The built-in Actions token cannot change Pages security settings, so this helper runs separately from deployment with an administrator's token held only in process memory.
 
 Original design references, the source menu PDF, local QA artifacts and dependencies remain local and are excluded from the repository. Only the built website is deployed.
 

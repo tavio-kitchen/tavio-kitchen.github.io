@@ -68,7 +68,7 @@ if (
   const repository = process.env.GITHUB_REPOSITORY;
   if (!token || repository !== "tavio-kitchen/tavio-kitchen.github.io") {
     throw new Error(
-      "Run this helper through the website repository's HTTPS workflow.",
+      "Run this helper in the website repository's authenticated administrative session.",
     );
   }
   const api = async (method, path, body) => {

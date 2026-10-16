@@ -1,0 +1,16 @@
+{
+  "name": "tavio-kitchen",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Tavio Kitchen — neighbourhood comfort food on Queen East.",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check-build.mjs",
+    "preview": "node scripts/serve.mjs --dist"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

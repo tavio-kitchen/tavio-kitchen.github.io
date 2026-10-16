@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#102f43" />
+    <meta
+      name="description"
+      content="Your table. Your takeaway. Your Tavio. Neighbourhood comfort food on Queen East — burgers, sandwiches, poutine and more at 1918 Queen St E, Toronto."
+    />
+    <title>Tavio Kitchen | Your neighbourhood takeout on Queen East</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="/hero.png" fetchpriority="high" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="home">
+      <svg
+        class="header-curve"
+        viewBox="0 0 1440 106"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <path d="M0 0H1440V62C1100 38 800 106 0 106Z" />
+      </svg>
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Tavio Kitchen home"
+          ><img src="/logo.png" alt="Tavio Kitchen" width="2172" height="724"
+        /></a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+        >
+          <span></span><span></span>
+        </button>
+        <nav
+          class="main-navigation"
+          id="main-navigation"
+          aria-label="Main navigation"
+        >
+          <a class="nav-link is-active" href="#home" aria-current="location"
+            >Home</a
+          >
+          <a class="nav-link" href="/menu.html">Menu</a>
+          <a class="nav-link" href="/our-story.html">Our Story</a>
+          <a class="nav-link" href="/visit-us.html">Visit Us</a>
+        </nav>
+        <button
+          class="button button-red header-order"
+          type="button"
+          data-order="choose"
+        >
+          Order now <svg aria-hidden="true"><use href="#icon-arrow" /></svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-heading">
+        <img
+          class="hero-image"
+          src="/hero.png"
+          width="1672"
+          height="941"
+          alt="A classic cheeseburger and fries, club sandwiches, and poutine on a sunny table"
+          fetchpriority="high"
+        />
+        <div class="hero-wash"></div>
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 id="hero-heading">
+              Your table.<br />Your takeaway.<br />Your Tavio.
+            </h1>
+            <p>Neighbourhood comfort food<br />on Queen East.</p>
+            <button
+              class="button button-red hero-order"
+              type="button"
+              data-order="choose"
+            >
+              Order now <svg aria-hidden="true"><use href="#icon-arrow" /></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="service-strip" aria-label="Pickup and delivery on Queen East">
+        <span>Pickup</span><i aria-hidden="true"></i><span>Delivery</span
+        ><i aria-hidden="true"></i><span>Queen East</span>
+      </div>
+
+      <section
+        class="menu-section container"
+        id="menu"
+        aria-label="Neighbourhood favourites"
+      >
+        <div class="menu-grid">
+          <article class="menu-item">
+            <img
+              src="/burger.png"
+              width="696"
+              height="720"
+              alt="Tavio classic cheeseburger with lettuce, tomato, onion and golden fries"
+              loading="lazy"
+            />
+            <h2>Tavio Classic Signature<br />Burger &amp; Fries</h2>
+            <p class="price"><span class="sr-only">Price: </span>$15.99</p>
+          </article>
+          <article class="menu-item">
+            <img
+              src="/sandwich.png"
+              width="702"
+              height="719"
+              alt="Toasted Canadian club sandwich quarters served with fries"
+              loading="lazy"
+            />
+            <h2>Canadian Club<br />Sandwich &amp; Fries</h2>
+            <p class="price"><span class="sr-only">Price: </span>$16.99</p>
+          </article>
+          <article class="menu-item">
+            <img
+              src="/poutine.png"
+              width="691"
+              height="719"
+              alt="A bowl of poutine with golden fries, cheese curds and rich gravy"
+              loading="lazy"
+            />
+            <h2>Regular Poutine</h2>
+            <p class="price"><span class="sr-only">Price: </span>$10.99</p>
+          </article>
+        </div>
+        <p class="menu-note">Prices before HST · Draft menu</p>
+      </section>
+
+      <section
+        class="story-section container"
+        id="our-story"
+        aria-labelledby="story-heading"
+      >
+        <img
+          class="story-image"
+          src="/chef.png"
+          width="1536"
+          height="1024"
+          alt="A chef carefully putting the finishing touches on a Tavio burger"
+          loading="lazy"
+        />
+        <div class="story-copy">
+          <p class="eyebrow">Your Queen East Neighbourhood Takeout</p>
+          <h2 id="story-heading">Good food for everyday people.</h2>
+          <p>
+            Tavio Kitchen is a neighbourhood takeout spot on Queen East, serving
+            the kind of food people always come back for — burgers, sandwiches,
+            poutine and more, made with care and meant to be enjoyed, any day of
+            the week.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="order-section container"
+        id="order"
+        aria-labelledby="order-heading"
+      >
+        <div>
+          <p class="eyebrow">Same great food. Wherever you are.</p>
+          <h2 id="order-heading">Dinner, sorted.</h2>
+        </div>
+        <div class="order-actions">
+          <button class="button button-red" type="button" data-order="pickup">
+            <svg class="order-icon" aria-hidden="true">
+              <use href="#icon-bag" /></svg
+            >Order pickup
+          </button>
+          <button
+            class="button button-navy"
+            type="button"
+            data-order="delivery"
+          >
+            <svg class="order-icon" aria-hidden="true">
+              <use href="#icon-car" /></svg
+            >Order delivery
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="visit-section"
+        id="visit-us"
+        aria-labelledby="visit-heading"
+      >
+        <div class="container visit-inner">
+          <div class="visit-copy">
+            <span class="yellow-rule" aria-hidden="true"></span>
+            <p class="visit-label">Find us on Queen East</p>
+            <h2 id="visit-heading">1918 Queen St E</h2>
+            <p class="city">Toronto, ON</p>
+          </div>
+          <a
+            class="neighbourhood-map"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Tavio+Kitchen+1918+Queen+St+E+Toronto+ON"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open directions to Tavio Kitchen, 1918 Queen Street East, Toronto in Google Maps"
+          >
+            <span class="map-block block-one"></span
+            ><span class="map-block block-two"></span
+            ><span class="map-block block-three"></span
+            ><span class="map-block block-four"></span>
+            <span class="map-road road-woodbine"></span
+            ><span class="map-road road-coxwell"></span
+            ><span class="map-road road-queen"></span>
+            <span class="street-label label-woodbine">Woodbine Ave</span
+            ><span class="street-label label-coxwell">Coxwell Ave</span
+            ><span class="street-label label-queen">Queen St E</span>
+            <span class="map-place"
+              ><svg aria-hidden="true"><use href="#icon-pin" /></svg
+              ><span
+                ><strong>Tavio Kitchen</strong
+                ><small>1918 Queen St E</small></span
+              ></span
+            >
+            <span class="map-directions"
+              >Get directions
+              <svg aria-hidden="true"><use href="#icon-arrow" /></svg
+            ></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <a class="brand footer-brand" href="#home" aria-label="Tavio Kitchen home"
+        ><img
+          src="/logo.png"
+          alt="Tavio Kitchen"
+          width="2172"
+          height="724"
+          loading="lazy"
+      /></a>
+      <nav aria-label="Footer navigation">
+        <a href="#home">Home</a><a href="/menu.html">Menu</a
+        ><a href="/our-story.html">Our Story</a
+        ><a href="/visit-us.html">Visit Us</a>
+      </nav>
+      <p>
+        Good food for everyday people.<span
+          class="yellow-rule"
+          aria-hidden="true"
+        ></span>
+      </p>
+    </footer>
+
+    <dialog
+      class="order-dialog"
+      id="order-dialog"
+      aria-labelledby="dialog-heading"
+      aria-describedby="dialog-description"
+    >
+      <button
+        class="dialog-close"
+        type="button"
+        aria-label="Close ordering dialog"
+      >
+        <svg aria-hidden="true"><use href="#icon-close" /></svg>
+      </button>
+      <p class="eyebrow">Your Tavio, your way.</p>
+      <h2 id="dialog-heading">What’s for dinner?</h2>
+      <p id="dialog-description">
+        Online ordering is coming soon. In the meantime, find your favourites on
+        the menu and visit us on Queen East.
+      </p>
+      <div class="dialog-options">
+        <button class="button button-red" type="button" data-order="pickup">
+          <svg aria-hidden="true"><use href="#icon-bag" /></svg>Pickup</button
+        ><button class="button button-navy" type="button" data-order="delivery">
+          <svg aria-hidden="true"><use href="#icon-car" /></svg>Delivery
+        </button>
+      </div>
+      <a class="dialog-menu-link" href="/menu.html"
+        >Explore the menu
+        <svg aria-hidden="true"><use href="#icon-arrow" /></svg
+      ></a>
+    </dialog>
+
+    <svg
+      class="svg-sprite"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <defs>
+        <symbol id="icon-arrow" viewBox="0 0 24 24">
+          <path d="M4 12h15m-6-6 6 6-6 6" />
+        </symbol>
+        <symbol id="icon-bag" viewBox="0 0 32 32">
+          <path d="M7 10h18l3 19H4l3-19Z" />
+          <path d="M11 12V7a5 5 0 0 1 10 0v5" />
+        </symbol>
+        <symbol id="icon-car" viewBox="0 0 32 32">
+          <path
+            d="m6 13 3-8h14l3 8M5 23H3v-7l3-3h20l3 3v7h-2M8 23h16M7 23v4m18-4v4M4 17h24M8 20h2m12 0h2"
+          />
+        </symbol>
+        <symbol id="icon-pin" viewBox="0 0 32 42">
+          <path
+            d="M16 1C7.7 1 1 7.7 1 16c0 10 15 25 15 25s15-15 15-25C31 7.7 24.3 1 16 1Z"
+            fill="currentColor"
+            stroke="none"
+          />
+          <circle cx="16" cy="15" r="5" fill="#fffdf8" stroke="none" />
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 24 24">
+          <path d="m6 6 12 12M6 18 18 6" />
+        </symbol>
+      </defs>
+    </svg>
+  </body>
+</html>

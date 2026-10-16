@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#102f43" />
+    <meta
+      name="description"
+      content="Explore the Tavio Kitchen menu: burgers, sandwiches, poutine, student meals, soups, sweets and more on Queen East, Toronto."
+    />
+    <title>Our Menu | Tavio Kitchen</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="/hero.png" fetchpriority="high" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/menu.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body class="menu-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="home">
+      <svg
+        class="header-curve"
+        viewBox="0 0 1440 106"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <path d="M0 0H1440V62C1100 38 800 106 0 106Z" />
+      </svg>
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="Tavio Kitchen home"
+          ><img src="/logo.png" alt="Tavio Kitchen" width="2172" height="724"
+        /></a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+        >
+          <span></span><span></span>
+        </button>
+        <nav
+          class="main-navigation"
+          id="main-navigation"
+          aria-label="Main navigation"
+        >
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link is-active" href="/menu.html" aria-current="page"
+            >Menu</a
+          >
+          <a class="nav-link" href="/our-story.html">Our Story</a>
+          <a class="nav-link" href="/visit-us.html">Visit Us</a>
+        </nav>
+        <button
+          class="button button-red header-order"
+          type="button"
+          data-order="choose"
+        >
+          Order now <svg aria-hidden="true"><use href="#icon-arrow" /></svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-heading">
+        <img
+          class="hero-image"
+          src="/hero.png"
+          width="1672"
+          height="941"
+          alt="A classic burger and fries, toasted club sandwiches and poutine on a sunny table"
+          fetchpriority="high"
+        />
+        <div class="hero-wash"></div>
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 id="hero-heading">
+              Comfort food<br />worth coming<br />back for.
+            </h1>
+            <p>Neighbourhood, student, and<br />comfort food on Queen East.</p>
+            <button
+              class="button button-red hero-order"
+              type="button"
+              data-order="choose"
+            >
+              Order now <svg aria-hidden="true"><use href="#icon-arrow" /></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <div
+        class="service-strip"
+        aria-label="Takeout and delivery on Queen East"
+      >
+        <span>Takeout</span><i aria-hidden="true"></i><span>Delivery</span
+        ><i aria-hidden="true"></i><span>Queen East</span>
+      </div>
+
+      <section
+        class="full-menu container"
+        id="menu"
+        aria-labelledby="menu-heading"
+      >
+        <div class="menu-intro">
+          <h2 id="menu-heading">Our menu</h2>
+          <div class="menu-intro-copy">
+            <p class="eyebrow">Same great food. Wherever you are.</p>
+            <p>
+              Burgers, sandwiches, poutine and more,
+              <em
+                >made with care and meant to be enjoyed, any day of the
+                week.</em
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-categories">
+          <section class="menu-category" aria-labelledby="soup-heading">
+            <img
+              class="category-image"
+              src="/soup.png"
+              alt="A warming bowl of chicken soup with carrots and noodles"
+              width="1448"
+              height="1086"
+              loading="lazy"
+            />
+            <div class="category-details">
+              <h3 id="soup-heading">Soup</h3>
+              <dl class="category-dishes">
+                <div class="dish">
+                  <dt>New England Chicken Soup</dt>
+                  <dd>$8.49</dd>
+                </div>
+                <div class="dish">
+                  <dt>Classic Cream of Broccoli Soup</dt>
+                  <dd>$7.99</dd>
+                </div>
+                <div class="dish">
+                  <dt>Beef &amp; Barley Soup</dt>
+                  <dd>$8.49</dd>
+                </div>
+              </dl>
+            </div>
+          </section>
+          <section class="menu-category" aria-labelledby="starters-heading">
+            <img
+              class="category-image"
+              src="/starter.png"
+              alt="Crispy glazed chicken wings with celery and dipping sauce"
+              width="1536"
+              height="1024"
+              loading="lazy"
+            />
+            <div class="category-details">
+              <h3 id="starters-heading">Starters</h3>
+              <dl class="category-dishes">
+                <div class="dish">
+                  <dt>Crispy Chicken Wings – 8 pc</dt>
+                  <dd>$15.99</dd>
+                </div>
+                <div class="dish">
+                  <dt>Chicken Fingers &amp; Fries</dt>
+                  <dd>$14.99</dd>
+                </div>
+                <div class="dish">
+                  <dt>Battered Onion Rings</dt>
+                  <dd>$7.99</dd>
+                </div>
+              </dl>
+              <p class="dish-note">
+                Wing flavours: Texas BBQ · Salt &amp; Pepper · Hot Sauce · Jerk
+              </p>
+            </div>
+          </section>
+          <section class="menu-category" aria-labelledby="burgers-heading">
+            <img
+              class="category-image"
+              src="/burger.png"
+              alt="Tavio cheeseburger piled with fresh toppings, served with golden fries"
+              width="696"
+              height="720"
+              loading="lazy"
+            />
+            <div class="category-details">
+              <h3 id="burgers-heading">Burgers</h3>
+              <dl class="category-dishes">
+                <div class="dish">
+                  <dt>Tavio Classic Signature Burger &amp; Fries</dt>
+                  <dd>$15.99</dd>
+                </div>
+                <div class="dish">
+                  <dt>Yokohama Smash Burger &amp; Fries</dt>
+                  <dd>$14.99</dd>
+                </div>
+                <div class="dish">
+                  <dt>Cheeseburger &amp; Fries</dt>
+                  <dd>$13.99</dd>
+                </div>
+              </dl>
+            </div>
+          </section>
+          <section class="menu-category" aria-labelledby="sandwiches-heading">
+            <img
+              class="category-image"
+              src="/sandwich.png"
+              alt="Canadian club sandwiches on toasted bread with a side of fries"
+              width="702"
+              height="719"
+              loading="lazy"
+            />
+            <div class="category-details">
+              <h3 id="sandwiches-heading">Sandwiches &amp; Wraps</h3>
+              <dl class="category-dishes">
+                <div class="dish">
+                  <dt>Canadian Club Sandwich &amp; Fries</dt>
+                  <dd>$16.99</dd>
+                </div>
+                <div class="dish">
+                  <dt>Ham &amp; Sweet Cheese Panini &amp; Fries</dt>
+                  <dd>$13.99</dd>
+                </div>
+                <div class="dish">
+                  <dt>Turkey &amp; Cheese Panini &amp; Fries</dt>
+                  <dd>$14.99</dd>
+                </div>
+                <div class="dish">
+                  <dt>Chicken Caesar Wrap</dt>
+                  <dd>$14.99</dd>
+                </div>
+              </dl>
+            </div>
+          </section>
+          <section class="menu-category" aria-labelledby="poutine-heading">
+            <img
+              class="category-image"
+              src="/poutine.png"
+              alt="Golden fries topped with cheese curds and rich gravy"
+              width="691"
+              height="719"
+              loading="lazy"
+            />
+            <div class="category-details">
+              <h3 id="poutine-heading">Poutine &amp; Classics</h3>
+              <dl class="category-dishes">
+                <div class="dish">
+                  <dt>Regular Poutine</dt>
+                  <dd>$10.99</dd>
+                </div>
+                <div class="dish">
+                  <dt>Chicken Poutine</dt>
+                  <dd>$14.99</dd>
+                </div>
+                <div class="dish">
+                  <dt>Hot Dog &amp; Fries</dt>
+                  <dd>$11.99</dd>
+                </div>
+                <div class="dish">
+                  <dt>Grilled Cheese &amp; Fries</dt>
+                  <dd>$11.99</dd>
+                </div>
+                <div class="dish">
+                  <dt>Greek Salad</dt>
+                  <dd>$13.99</dd>
+                </div>
+                <div class="dish">
+                  <dt>Caesar Salad</dt>
+                  <dd>$13.99</dd>
+                </div>
+              </dl>
+            </div>
+          </section>
+          <section class="menu-category" aria-labelledby="students-heading">
+            <img
+              class="category-image"
+              src="/student.png"
+              alt="A student combo of a hot dog, golden fries and a cold soft drink"
+              width="1536"
+              height="1024"
+              loading="lazy"
+            />
+            <div class="category-details">
+              <h3 id="students-heading">Student Meals</h3>
+              <dl class="category-dishes">
+                <div class="dish">
+                  <dt>2 pc Chicken + Fries + Pop</dt>
+                  <dd>$13.99</dd>
+                </div>
+                <div class="dish">
+                  <dt>Hot Dog + Fries + Pop</dt>
+                  <dd>$11.99</dd>
+                </div>
+                <div class="dish">
+                  <dt>Beef/Chicken Cheeseburger + Fries + Pop</dt>
+                  <dd>$14.99</dd>
+                </div>
+              </dl>
+            </div>
+          </section>
+          <section class="menu-category" aria-labelledby="drinks-heading">
+            <img
+              class="category-image"
+              src="/coffee.png"
+              alt="Freshly brewed coffee in a Tavio Kitchen mug"
+              width="1448"
+              height="1086"
+              loading="lazy"
+            />
+            <div class="category-details">
+              <h3 id="drinks-heading">Coffee · Tea · Drinks</h3>
+              <dl class="category-dishes">
+                <div class="dish">
+                  <dt>Coffee</dt>
+                  <dd>$2.49</dd>
+                </div>
+                <div class="dish">
+                  <dt>Tea</dt>
+                  <dd>$2.49</dd>
+                </div>
+                <div class="dish">
+                  <dt>Soft Drink</dt>
+                  <dd>$2.49</dd>
+                </div>
+                <div class="dish">
+                  <dt>Bottled Water</dt>
+                  <dd>$1.99</dd>
+                </div>
+              </dl>
+            </div>
+          </section>
+          <section class="menu-category" aria-labelledby="sweets-heading">
+            <img
+              class="category-image"
+              src="/sweets.png"
+              alt="A slice of cheesecake with strawberries and berry sauce"
+              width="1536"
+              height="1024"
+              loading="lazy"
+            />
+            <div class="category-details">
+              <h3 id="sweets-heading">Sweets</h3>
+              <dl class="category-dishes">
+                <div class="dish">
+                  <dt>Butter Cookies</dt>
+                  <dd>$3.49</dd>
+                </div>
+                <div class="dish">
+                  <dt>Brownie</dt>
+                  <dd>$4.99</dd>
+                </div>
+                <div class="dish">
+                  <dt>Cheesecake</dt>
+                  <dd>$6.49</dd>
+                </div>
+                <div class="dish">
+                  <dt>Carrot Cake</dt>
+                  <dd>$6.49</dd>
+                </div>
+                <div class="dish">
+                  <dt>Panna Cotta</dt>
+                  <dd>$6.49</dd>
+                </div>
+              </dl>
+            </div>
+          </section>
+        </div>
+
+        <section class="chef-special" aria-labelledby="special-heading">
+          <img
+            src="/rice.png"
+            alt="A freshly prepared rice dish with golden chicken and colourful vegetables"
+            width="2001"
+            height="786"
+            loading="lazy"
+          />
+          <div class="special-copy">
+            <p class="special-label">Chef’s hot item</p>
+            <h3 id="special-heading">Weekly Rice Dish</h3>
+            <p class="special-description">
+              A new and delicious rice dish, prepared fresh each week.
+            </p>
+          </div>
+          <p class="special-price">
+            <span class="sr-only">Price: </span>$14.99
+          </p>
+        </section>
+        <p class="full-menu-note">
+          Prices before HST · Ask about Chef’s Special of the Day
+        </p>
+      </section>
+
+      <section
+        class="visit-section"
+        id="visit-us"
+        aria-labelledby="visit-heading"
+      >
+        <div class="container menu-visit-inner">
+          <div class="visit-copy">
+            <span class="yellow-rule" aria-hidden="true"></span>
+            <p class="visit-label">Find us on Queen East</p>
+            <h2 id="visit-heading">1918 Queen St E</h2>
+            <p class="city">Toronto, ON</p>
+          </div>
+          <div class="order-actions">
+            <button class="button button-red" type="button" data-order="pickup">
+              <svg class="order-icon" aria-hidden="true">
+                <use href="#icon-bag" /></svg
+              >Order pickup
+            </button>
+            <button
+              class="button button-navy"
+              type="button"
+              data-order="delivery"
+            >
+              <svg class="order-icon" aria-hidden="true">
+                <use href="#icon-car" /></svg
+              >Order delivery
+            </button>
+          </div>
+          <a
+            class="neighbourhood-map"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Tavio+Kitchen+1918+Queen+St+E+Toronto+ON"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open directions to Tavio Kitchen, 1918 Queen Street East, Toronto in Google Maps"
+          >
+            <span class="map-block block-one"></span
+            ><span class="map-block block-two"></span
+            ><span class="map-block block-three"></span
+            ><span class="map-block block-four"></span>
+            <span class="map-road road-woodbine"></span
+            ><span class="map-road road-coxwell"></span
+            ><span class="map-road road-queen"></span>
+            <span class="street-label label-woodbine">Woodbine Ave</span
+            ><span class="street-label label-coxwell">Coxwell Ave</span
+            ><span class="street-label label-queen">Queen St E</span>
+            <span class="map-place"
+              ><svg aria-hidden="true"><use href="#icon-pin" /></svg
+              ><span
+                ><strong>Tavio Kitchen</strong
+                ><small>1918 Queen St E</small></span
+              ></span
+            >
+            <span class="map-directions"
+              >Get directions
+              <svg aria-hidden="true"><use href="#icon-arrow" /></svg
+            ></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <a class="brand footer-brand" href="/" aria-label="Tavio Kitchen home"
+        ><img
+          src="/logo.png"
+          alt="Tavio Kitchen"
+          width="2172"
+          height="724"
+          loading="lazy"
+      /></a>
+      <nav aria-label="Footer navigation">
+        <a href="/">Home</a><a href="/menu.html">Menu</a
+        ><a href="/our-story.html">Our Story</a
+        ><a href="/visit-us.html">Visit Us</a>
+      </nav>
+      <p>
+        Good food for everyday people.<span
+          class="yellow-rule"
+          aria-hidden="true"
+        ></span>
+      </p>
+    </footer>
+
+    <dialog
+      class="order-dialog"
+      id="order-dialog"
+      aria-labelledby="dialog-heading"
+      aria-describedby="dialog-description"
+    >
+      <button
+        class="dialog-close"
+        type="button"
+        aria-label="Close ordering dialog"
+      >
+        <svg aria-hidden="true"><use href="#icon-close" /></svg>
+      </button>
+      <p class="eyebrow">Your Tavio, your way.</p>
+      <h2 id="dialog-heading">What’s for dinner?</h2>
+      <p id="dialog-description">
+        Online ordering is coming soon. In the meantime, find your favourites on
+        the menu and visit us on Queen East.
+      </p>
+      <div class="dialog-options">
+        <button class="button button-red" type="button" data-order="pickup">
+          <svg aria-hidden="true"><use href="#icon-bag" /></svg>Pickup</button
+        ><button class="button button-navy" type="button" data-order="delivery">
+          <svg aria-hidden="true"><use href="#icon-car" /></svg>Delivery
+        </button>
+      </div>
+      <a class="dialog-menu-link" href="#menu"
+        >Explore the menu
+        <svg aria-hidden="true"><use href="#icon-arrow" /></svg
+      ></a>
+    </dialog>
+
+    <svg
+      class="svg-sprite"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <defs>
+        <symbol id="icon-arrow" viewBox="0 0 24 24">
+          <path d="M4 12h15m-6-6 6 6-6 6" />
+        </symbol>
+        <symbol id="icon-bag" viewBox="0 0 32 32">
+          <path d="M7 10h18l3 19H4l3-19Z" />
+          <path d="M11 12V7a5 5 0 0 1 10 0v5" />
+        </symbol>
+        <symbol id="icon-car" viewBox="0 0 32 32">
+          <path
+            d="m6 13 3-8h14l3 8M5 23H3v-7l3-3h20l3 3v7h-2M8 23h16M7 23v4m18-4v4M4 17h24M8 20h2m12 0h2"
+          />
+        </symbol>
+        <symbol id="icon-pin" viewBox="0 0 32 42">
+          <path
+            d="M16 1C7.7 1 1 7.7 1 16c0 10 15 25 15 25s15-15 15-25C31 7.7 24.3 1 16 1Z"
+            fill="currentColor"
+            stroke="none"
+          />
+          <circle cx="16" cy="15" r="5" fill="#fffdf8" stroke="none" />
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 24 24">
+          <path d="m6 6 12 12M6 18 18 6" />
+        </symbol>
+      </defs>
+    </svg>
+  </body>
+</html>

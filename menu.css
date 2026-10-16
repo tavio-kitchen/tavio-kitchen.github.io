@@ -1,0 +1,553 @@
+.menu-page .hero {
+  height: 456px;
+}
+.menu-page .hero h1 {
+  font-size: clamp(58px, 5.2vw, 72px);
+  line-height: 1.04;
+  margin-bottom: 12px;
+}
+.menu-page .hero-copy > p {
+  font-size: 23px;
+  margin-bottom: 18px;
+}
+.menu-page .hero-order {
+  min-height: 55px;
+  padding: 13px 29px;
+  font-size: 22px;
+}
+.menu-page .hero-image {
+  object-position: center 60%;
+}
+.menu-page .service-strip {
+  height: 50px;
+  gap: 31px;
+  font-size: 16px;
+  letter-spacing: 4px;
+}
+.full-menu {
+  padding-block: 28px 20px;
+}
+.menu-intro {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 26px;
+}
+.menu-intro h2 {
+  font: 400 96px/1 var(--display);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.menu-intro-copy {
+  border-left: 1px solid var(--navy);
+  padding-left: 40px;
+}
+.menu-intro .eyebrow {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+.menu-intro-copy > p:last-child {
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0;
+}
+.menu-categories {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 30px;
+}
+.menu-category {
+  display: grid;
+  grid-template-columns: 40% minmax(0, 1fr);
+  gap: 22px;
+  min-width: 0;
+}
+.category-image {
+  width: 100%;
+  height: 100%;
+  min-height: 160px;
+  object-fit: cover;
+}
+.category-details {
+  min-width: 0;
+}
+.category-details h3 {
+  margin: 0 0 9px;
+  border-bottom: 1px solid #102f4380;
+  padding-bottom: 5px;
+  font: 400 25px/1.2 var(--display);
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+}
+.category-dishes {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+.dish {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: baseline;
+  padding-block: 3px;
+}
+.dish dt {
+  font-size: 17px;
+  line-height: 1.35;
+}
+.dish dd {
+  margin: 0;
+  color: var(--red-dark);
+  font: 400 19px/1.2 var(--display);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.dish-note {
+  margin: 2px 0 4px;
+  font-size: 12px;
+  line-height: 1.4;
+  font-style: italic;
+  color: #4e5861;
+}
+.chef-special {
+  display: grid;
+  grid-template-columns: 35% minmax(0, 1fr) auto;
+  gap: 30px;
+  align-items: center;
+  margin-top: 26px;
+  border: 1px solid #102f4380;
+  border-radius: 4px;
+  padding: 4px 36px 4px 4px;
+  overflow: hidden;
+}
+.chef-special > img {
+  width: 100%;
+  height: 132px;
+  object-fit: cover;
+}
+.special-label {
+  color: var(--red-dark);
+  font:
+    600 13px/1.4 Arial,
+    Helvetica,
+    sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 3px;
+}
+.chef-special h3 {
+  font: 400 39px/1.15 var(--display);
+  margin: 0 0 6px;
+}
+.special-description {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+  font-style: italic;
+}
+.special-price {
+  margin: 0;
+  color: var(--red-dark);
+  font: 400 35px/1.2 var(--display);
+}
+.full-menu-note {
+  margin: 16px 0 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  font-style: italic;
+}
+.menu-visit-inner {
+  display: grid;
+  grid-template-columns: 0.9fr 1.4fr 1.15fr;
+  align-items: center;
+  gap: 22px;
+}
+.menu-visit-inner .visit-label {
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+.menu-visit-inner .visit-copy .yellow-rule {
+  margin-bottom: 16px;
+}
+.menu-visit-inner .visit-copy h2 {
+  font-size: 31px;
+  letter-spacing: 0.2px;
+}
+.menu-visit-inner .visit-copy .city {
+  font-size: 26px;
+}
+.menu-visit-inner .order-actions {
+  gap: 14px;
+}
+.menu-visit-inner .button {
+  flex: 1;
+  min-width: 0;
+  min-height: 63px;
+  padding: 15px 12px;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+  gap: 12px;
+}
+.menu-visit-inner .button-navy {
+  border: 1px solid var(--paper);
+}
+.menu-visit-inner .order-icon {
+  width: 27px;
+  height: 27px;
+}
+.menu-visit-inner .neighbourhood-map {
+  height: 155px;
+}
+.menu-visit-inner .map-place {
+  left: 40%;
+  gap: 7px;
+}
+.menu-visit-inner .map-place strong {
+  font-size: 12px;
+  letter-spacing: 0.6px;
+}
+.menu-visit-inner .map-place small {
+  font-size: 10px;
+}
+.menu-visit-inner .map-place > svg {
+  width: 26px;
+  height: 36px;
+}
+.menu-visit-inner .street-label {
+  font-size: 11px;
+}
+@media (max-width: 1100px) {
+  .menu-page .hero {
+    height: 382px;
+  }
+  .menu-page .hero h1 {
+    font-size: 59px;
+  }
+  .menu-page .hero-copy > p {
+    font-size: 21px;
+  }
+  .menu-page .hero-order {
+    min-height: 51px;
+    font-size: 21px;
+    padding: 12px 26px;
+  }
+  .menu-page .service-strip {
+    height: 45px;
+    font-size: 14px;
+  }
+  .full-menu {
+    padding-top: 25px;
+  }
+  .menu-intro {
+    gap: 30px;
+    margin-bottom: 23px;
+  }
+  .menu-intro h2 {
+    font-size: 88px;
+  }
+  .menu-intro-copy {
+    padding-left: 30px;
+  }
+  .menu-intro .eyebrow {
+    font-size: 23px;
+  }
+  .menu-intro-copy > p:last-child {
+    font-size: 18px;
+  }
+  .menu-categories {
+    gap: 21px 26px;
+  }
+  .menu-category {
+    gap: 18px;
+  }
+  .category-image {
+    min-height: 124px;
+  }
+  .category-details h3 {
+    font-size: 22px;
+    margin-bottom: 7px;
+  }
+  .dish {
+    gap: 9px;
+    padding-block: 1px;
+  }
+  .dish dt {
+    font-size: 15px;
+  }
+  .dish dd {
+    font-size: 17px;
+  }
+  .chef-special {
+    gap: 26px;
+    padding-right: 26px;
+  }
+  .chef-special h3 {
+    font-size: 35px;
+  }
+  .special-description {
+    font-size: 17px;
+  }
+  .special-price {
+    font-size: 32px;
+  }
+  .menu-visit-inner {
+    gap: 16px;
+    grid-template-columns: 0.95fr 1.5fr 1.15fr;
+  }
+  .menu-visit-inner .visit-copy h2 {
+    font-size: 27px;
+  }
+  .menu-visit-inner .visit-copy .city {
+    font-size: 23px;
+  }
+  .menu-visit-inner .button {
+    font-size: 16px;
+    padding-inline: 10px;
+    gap: 9px;
+  }
+  .menu-visit-inner .order-actions {
+    gap: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .menu-page .hero {
+    height: 405px;
+  }
+  .menu-page .hero h1 {
+    font-size: 57px;
+  }
+  .menu-page .hero-copy > p {
+    font-size: 20px;
+  }
+  .menu-page .service-strip {
+    gap: 22px;
+    font-size: 13px;
+    letter-spacing: 3px;
+  }
+  .menu-intro {
+    gap: 24px;
+  }
+  .menu-intro h2 {
+    font-size: 64px;
+  }
+  .menu-intro-copy {
+    padding-left: 24px;
+  }
+  .menu-intro .eyebrow {
+    font-size: 20px;
+  }
+  .menu-intro-copy > p:last-child {
+    font-size: 16px;
+  }
+  .menu-categories {
+    gap: 24px;
+  }
+  .menu-category {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .category-image {
+    height: 180px;
+    min-height: 0;
+  }
+  .category-details h3 {
+    font-size: 24px;
+  }
+  .dish dt {
+    font-size: 16px;
+  }
+  .dish dd {
+    font-size: 18px;
+  }
+  .chef-special {
+    grid-template-columns: 32% minmax(0, 1fr) auto;
+    gap: 18px;
+    padding-right: 18px;
+  }
+  .chef-special > img {
+    height: 151px;
+  }
+  .chef-special h3 {
+    font-size: 29px;
+  }
+  .special-description {
+    font-size: 16px;
+  }
+  .special-price {
+    font-size: 27px;
+  }
+  .menu-visit-inner {
+    grid-template-columns: 1fr 1.2fr;
+    gap: 24px;
+  }
+  .menu-visit-inner .order-actions {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 0;
+  }
+  .menu-visit-inner .neighbourhood-map {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    height: 210px;
+  }
+  .menu-visit-inner .button {
+    font-size: 16px;
+    padding: 13px 10px;
+  }
+}
+@media (max-width: 600px) {
+  .menu-page .hero {
+    height: 658px;
+  }
+  .menu-page .hero-inner {
+    padding-top: 68px;
+  }
+  .menu-page .hero h1 {
+    font-size: clamp(48px, 11.5vw, 62px);
+  }
+  .menu-page .hero-copy > p {
+    font-size: 19px;
+    margin-bottom: 18px;
+  }
+  .menu-page .hero-order {
+    font-size: 20px;
+  }
+  .menu-page .hero-image {
+    object-position: 65% center;
+  }
+  .menu-page .service-strip {
+    gap: 12px;
+    font-size: 11px;
+    letter-spacing: 1.8px;
+  }
+  .menu-page .service-strip i {
+    height: 4px;
+    width: 4px;
+  }
+  .full-menu {
+    padding-block: 27px 25px;
+  }
+  .menu-intro {
+    display: block;
+    margin-bottom: 26px;
+  }
+  .menu-intro h2 {
+    font-size: 70px;
+    margin-bottom: 16px;
+  }
+  .menu-intro-copy {
+    border: 0;
+    padding-left: 0;
+  }
+  .menu-intro .eyebrow {
+    font-size: 21px;
+  }
+  .menu-intro-copy > p:last-child {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .menu-categories {
+    grid-template-columns: 1fr;
+    gap: 29px;
+  }
+  .menu-category {
+    gap: 14px;
+  }
+  .category-image {
+    height: auto;
+    aspect-ratio: 1.8;
+  }
+  .category-details h3 {
+    font-size: 27px;
+    margin-bottom: 9px;
+  }
+  .dish {
+    padding-block: 4px;
+    gap: 18px;
+  }
+  .dish dt {
+    font-size: 17px;
+  }
+  .dish dd {
+    font-size: 20px;
+  }
+  .dish-note {
+    font-size: 13px;
+  }
+  .chef-special {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 16px 12px;
+    padding: 4px 4px 20px;
+    margin-top: 30px;
+  }
+  .chef-special > img {
+    grid-column: 1 / -1;
+    height: auto;
+    aspect-ratio: 2.4;
+  }
+  .special-copy {
+    padding-left: 14px;
+  }
+  .special-label {
+    font-size: 11px;
+  }
+  .chef-special h3 {
+    font-size: 29px;
+  }
+  .special-description {
+    font-size: 16px;
+  }
+  .special-price {
+    font-size: 28px;
+    padding-right: 14px;
+    align-self: start;
+    margin-top: 22px;
+  }
+  .full-menu-note {
+    font-size: 14px;
+    padding-inline: 10px;
+  }
+  .menu-visit-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 23px;
+  }
+  .menu-visit-inner .visit-copy h2 {
+    font-size: 38px;
+  }
+  .menu-visit-inner .visit-copy .city {
+    font-size: 29px;
+  }
+  .menu-visit-inner .button {
+    font-size: clamp(13px, 4.1vw, 18px);
+    min-height: 62px;
+    padding-inline: 8px;
+    gap: 8px;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+  }
+  .menu-visit-inner .order-icon {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+  }
+  .menu-visit-inner .neighbourhood-map {
+    height: 200px;
+  }
+  .menu-visit-inner .map-place {
+    left: 46%;
+  }
+  .menu-visit-inner .map-place strong {
+    font-size: 15px;
+  }
+  .menu-visit-inner .map-place small {
+    font-size: 12px;
+  }
+  .menu-visit-inner .street-label {
+    font-size: 13px;
+  }
+}

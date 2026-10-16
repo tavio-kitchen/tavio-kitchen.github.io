@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.qa/
+*.log
+.env
+.env.*
+!.env.example
+.aws/
+.codex/
+.agents/
+/design-reference.jpeg
+/menu-design-reference.png
+/Tavio_Kitchen_Menu_*.pdf

@@ -1,6 +1,5 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".main-navigation");
-const dialog = document.querySelector("#order-dialog");
 
 function closeNavigation() {
   navigation.classList.remove("is-open");
@@ -21,7 +20,6 @@ menuToggle.addEventListener("click", () => {
 document.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
     closeNavigation();
-    if (dialog.open) dialog.close();
   });
 });
 
@@ -38,27 +36,6 @@ document.addEventListener("click", (event) => {
 
 matchMedia("(min-width: 601px)").addEventListener("change", (event) => {
   if (event.matches) closeNavigation();
-});
-
-document.querySelectorAll("[data-order]").forEach((button) => {
-  button.addEventListener("click", () => {
-    if (!dialog.open) dialog.showModal();
-  });
-});
-
-document
-  .querySelector(".dialog-close")
-  .addEventListener("click", () => dialog.close());
-dialog.addEventListener("click", (event) => {
-  if (event.target !== dialog) return;
-  const bounds = dialog.getBoundingClientRect();
-  if (
-    event.clientX < bounds.left ||
-    event.clientX > bounds.right ||
-    event.clientY < bounds.top ||
-    event.clientY > bounds.bottom
-  )
-    dialog.close();
 });
 
 function updateActiveNavigation() {

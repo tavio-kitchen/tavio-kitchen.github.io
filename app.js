@@ -1,9 +1,6 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".main-navigation");
 const dialog = document.querySelector("#order-dialog");
-const dialogTitle = document.querySelector("#dialog-heading");
-const dialogDescription = document.querySelector("#dialog-description");
-const dialogOptions = document.querySelector(".dialog-options");
 
 function closeNavigation() {
   navigation.classList.remove("is-open");
@@ -45,21 +42,7 @@ matchMedia("(min-width: 601px)").addEventListener("change", (event) => {
 
 document.querySelectorAll("[data-order]").forEach((button) => {
   button.addEventListener("click", () => {
-    const mode = button.dataset.order;
-    const choosing = mode === "choose";
-    dialogTitle.textContent = choosing
-      ? "What’s for dinner?"
-      : mode === "pickup"
-        ? "Your favourites, to go."
-        : "Comfort food, delivered.";
-    dialogDescription.textContent = choosing
-      ? "Online ordering is coming soon. In the meantime, find your favourites on the menu and visit us on Queen East."
-      : mode === "pickup"
-        ? "Online pickup ordering is coming soon. Explore our favourites below, then come see us at 1918 Queen St E, Toronto."
-        : "Online delivery is coming soon. Explore our favourites below, or visit us at 1918 Queen St E, Toronto.";
-    dialogOptions.hidden = !choosing;
     if (!dialog.open) dialog.showModal();
-    if (!choosing) document.querySelector(".dialog-close").focus();
   });
 });
 

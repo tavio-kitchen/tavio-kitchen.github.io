@@ -40,6 +40,6 @@ Gomes still needs to confirm the weekly hours and telephone number. They remain 
 
 Set each confirmed weekday to an object containing `open` and `close` as 24-hour `HH:MM` strings, or `{ closed: true }`. Set `telephone` to the confirmed international number beginning with `+` and `telephoneDisplay` to its readable display form. Today is highlighted in the restaurant's `America/Toronto` timezone. The call action becomes a real `tel:` link when configured. Unknown or invalid values retain the pending state.
 
-Ordering buttons show an accessible coming-soon dialog. Replace the handlers with the client's verified pickup and delivery URLs before launch; no orders or payments are collected. No phone number, hours or ordering providers have been invented.
+Ordering buttons open a dialog linking to Tavio Kitchen on Uber Eats and DoorDash. Pickup and delivery availability is determined by each ordering platform; no orders or payments are collected on this site.
 
 Shared brand colours and responsive styles are in `styles.css`; each additional page has its own stylesheet. Images are the original supplied assets. Design references and the source PDF are excluded from build output. Anton is served locally from `public/fonts/` with its SIL Open Font License.
